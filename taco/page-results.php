@@ -182,34 +182,23 @@ $location = getLocation($_POST['location']);
 	
 	<?php foreach($tacos as $taco) :?>
 	<?php  $taco_count++; ?>
-		<div class="col-xs-12 taco-container"
+
+		<div class="taco-container"
 		 meat="<?php echo $taco->fields['taco-meat']; ?>"
 		 price="<?php echo $taco->fields['price']; ?>"
 		 distance="<?php echo $post->dist; ?>"
 		 rating="<?php echo $taco->fields['taco-rating']; ?>"
 		 heat="<?php echo $taco->fields['heat']; ?>"
 		>
-			<h1 class="taconame"><?php echo $taco->post_title ?></h1>
-			<div class="picture-container">
-				<?php echo  get_the_post_thumbnail( $taco->ID, ['300','300']); ?>
+			<div class="picture-container no-pad-marg">
+				<img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($taco->ID) ) ?>">
+				<span><?php echo round($post->dist,2); ?>m</span>
 			</div>
-			<div class="row">
-			<div class="col-xs-6">
-				<h3 class="restaurant-name"><?php echo $post->post_title ?></h3>
+			<div class="info-container pull-right">
+				<div class="star-container"><?php stars($taco->fields['taco-rating']); ?></div>
 			</div>
-			<div class="col-xs-6">
-				<span><div class="star-container"><?php stars($taco->fields['taco-rating']); ?></div></span>	
-			</div>
-			</div>
-			<div class="col-xs-12">
-				<span>Meat: <?php echo $taco_meat[$taco->fields['taco-meat']-1]; ?></span>
-				<span>Price: $<?php echo $taco->fields['price']; ?></span>
-				<span>Heat: <?php echo $taco->fields['heat']; ?></span>
-				<span>Distance: <?php echo round($post->dist,2); ?></span>
-				</div>
 		</div>
 	<?php endforeach; ?>
-	
 	<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>
 	</div>
