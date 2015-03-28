@@ -17,7 +17,7 @@ $location = getLocation($_POST['location']);
 
 ?>	
 	
-<div class="login-btn-container" loggedIn="<?php echo (is_user_logged_in()?'true':'false') ?>">
+<!-- <div class="login-btn-container" loggedIn="<?php echo (is_user_logged_in()?'true':'false') ?>">
 <?php 
 	if(is_user_logged_in()){
 		echo '<a href="'.get_permalink(71).'&logout=true">Logout</a>';
@@ -25,38 +25,140 @@ $location = getLocation($_POST['location']);
 		echo '<a href="'.get_permalink(68).'">Login</a>';
 	}
 ?>
+</div> -->
+
+<div id="main-pic">
+	<img src="http://placehold.it/1440X450" alt="">
 </div>
 
-<div class="container">
-	
+<div class="container content">
 
-<!-- ============== FILTER ======================== -->	 
-	<div class="col-xs-3" >
-		<div class="filter-container pull-left" >
-			<div>
-				<span>Meat:</span>
-				<div><span class="filter-label">Beef:</span><input clas="meat-selector" type="checkbox" value="1" checked></div>
-				<div><span class="filter-label">Chicken:</span><input clas="meat-selector" type="checkbox" value="2" checked></div> 
-				<div><span class="filter-label">Pork:</span><input clas="meat-selector" type="checkbox" value="3" checked></div>
-				<div><span class="filter-label">Fish:</span><input clas="meat-selector" type="checkbox" value="4" checked></div>
-				<div><span class="filter-label">Vegan:</span><input clas="meat-selector" type="checkbox"value="5" checked></div>
-				<div><span class="filter-label">Other:</span><input class="meat-selector" type="checkbox" value="6" checked></div> 
-			</div>
-			<div> 
-				<input data="rating" class="sort-tacos" type="button"value="Sort by Rating"> 
-				<input data="price" class="sort-tacos" type="button"value="Sort by Price">
-				<input data="heat" class="sort-tacos" type="button" value="Sort by Heat">
-				<input data="distance" rev="true" class="sort-tacos" type="button" value="Sort by Distance">             
-				<div class="slider-container"><span class="filter-label">Distance:</span><div><input data="distance" class="taco-range" type="range"  min="0" max="5" value="5" step="1" steps="5,10,20,50,100"/></div></div>
-				<div class="slider-container"><span class="filter-label">Rating:</span><div><input type="range" class="taco-range" data="rating" rev="true" min="0" max="5" value="0" step="1" /></div></div>             
-				<div class="slider-container"><span class="filter-label">Price:</span><div><input type="range"class="taco-range" data="price" rev="true" min="0" max="5"  value="5" step="1" /></div></div>
+<!-- ********************* FILTER ACCORDION TEST *********************** -->
+
+	<div class="col-xs-3 filter-main" >
+		<div class="row">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+				    <div class="panel-heading border0" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				          MEATS:
+				        </a>
+				      </h4>
+				    </div>		    
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				   			<div><span class="filter-label filter-title">Beef:</span><input clas="meat-selector" type="checkbox" value="1" checked></div>
+							<div><span class="filter-label filter-title">Chicken:</span><input clas="meat-selector" type="checkbox" value="2" checked></div> 
+							<div><span class="filter-label filter-title">Pork:</span><input clas="meat-selector" type="checkbox" value="3" checked></div>
+							<div><span class="filter-label filter-title">Fish:</span><input clas="meat-selector" type="checkbox" value="4" checked></div>
+							<div><span class="filter-label filter-title">Vegan:</span><input clas="meat-selector" type="checkbox"value="5" checked></div>
+							<div><span class="filter-label filter-title">Other:</span><input class="meat-selector" type="checkbox" value="6" checked></div> 
+				      </div>
+				    </div>
+				 </div>
+
+				 <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          DISTANCE:
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+							<input data="distance" rev="true" class="sort-tacos col-xs-12" type="button" value="Sort by Distance"> 
+							<div class="slider-container col-xs-12"><!-- <span class="filter-label filter-title">Distance:</span> -->
+								<div><input data="distance" class="taco-range" type="range"  min="0" max="5" value="5" step="1" steps="5,10,20,50,100"/></div>
+							</div> 
+				      </div>
+				    </div>
+				 </div>
+
+				 <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          RATING:
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					    <div class="panel-body">
+							<input data="rating" class="sort-tacos col-xs-12 filter-title" type="button"value="Sort by Rating">
+							<div class="slider-container col-xs-12"><!-- <span class="filter-label filter-title">Rating:</span> -->
+								<div><input type="range" class="taco-range" data="rating" rev="true" min="0" max="5" value="0" step="1" /></div>
+							</div>
+					    </div>
+				    </div>
+				 </div>
+
+				 <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingFour">
+				      <h4 class="panel-title">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          PRICE:
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				      	<div class="panel-body">
+							<input data="price" class="sort-tacos col-xs-12" type="button"value="SORT BY PRICE">
+							<div class="slider-container col-xs-12"><!-- <span class="filter-label filter-title">Price:</span> -->
+								<div><input type="range"class="taco-range" data="price" rev="true" min="0" max="5"  value="5" step="1" /></div>
+							</div>
+				      	</div>
+				    </div>
+				    <div class="row">
+					    <div class="col-xs-12 heat">
+					    	<input data="heat" class="sort-tacos col-xs-12" type="button" value="SORT BY HEAT">
+					    </div>
+				    </div>
+				</div>				
 			</div>
 		</div>
-		
 	</div>
 
 
+<!-- ============== SHANT FILTER ======================== -->	
+
+<!-- 	<div class="col-xs-3 filter-main" >
+	<h3 class="sidebar-head">FILTERS:</h3>
+		<div class="filter-container pull-left" >
+			<div>
+				<span>Meat:</span>
+				<div><span class="filter-label filter-title">Beef:</span><input clas="meat-selector" type="checkbox" value="1" checked></div>
+				<div><span class="filter-label filter-title">Chicken:</span><input clas="meat-selector" type="checkbox" value="2" checked></div> 
+				<div><span class="filter-label filter-title">Pork:</span><input clas="meat-selector" type="checkbox" value="3" checked></div>
+				<div><span class="filter-label filter-title">Fish:</span><input clas="meat-selector" type="checkbox" value="4" checked></div>
+				<div><span class="filter-label filter-title">Vegan:</span><input clas="meat-selector" type="checkbox"value="5" checked></div>
+				<div><span class="filter-label filter-title">Other:</span><input class="meat-selector" type="checkbox" value="6" checked></div> 
+			</div>
+			<div> 
+				<input data="rating" class="sort-tacos col-xs-12 filter-title" type="button"value="Sort by Rating">
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Rating:</span>
+					<div><input type="range" class="taco-range" data="rating" rev="true" min="0" max="5" value="0" step="1" /></div>
+				</div>
+				<input data="price" class="sort-tacos col-xs-12 filter-title" type="button"value="Sort by Price">
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Price:</span>
+					<div><input type="range"class="taco-range" data="price" rev="true" min="0" max="5"  value="5" step="1" /></div>
+				</div>
+				<input data="distance" rev="true" class="sort-tacos col-xs-12 filter-title" type="button" value="Sort by Distance"> 
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Distance:</span>
+					<div><input data="distance" class="taco-range" type="range"  min="0" max="5" value="5" step="1" steps="5,10,20,50,100"/></div>
+				</div> 
+				<input data="heat" class="sort-tacos col-xs-12" type="button" value="Sort by Heat">           
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Distance:</span><div><input data="distance" class="taco-range" type="range"  min="0" max="5" value="5" step="1" steps="5,10,20,50,100"/></div></div>
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Rating:</span><div><input type="range" class="taco-range" data="rating" rev="true" min="0" max="5" value="0" step="1" /></div></div>             
+				<div class="slider-container col-xs-12"><span class="filter-label filter-title">Price:</span><div><input type="range"class="taco-range" data="price" rev="true" min="0" max="5"  value="5" step="1" /></div></div>
+			</div>
+		</div>	
+	</div> -->
+
+
 <!-- ================ SEARCH RESULTS ============================ -->
+
 	<div class="tacos-container col-xs-6">
 	<?php add_filter('posts_where', 'search_where' ); ?>
 	
@@ -87,19 +189,24 @@ $location = getLocation($_POST['location']);
 		 rating="<?php echo $taco->fields['taco-rating']; ?>"
 		 heat="<?php echo $taco->fields['heat']; ?>"
 		>
-			<h1><?php echo $taco->post_title ?></h1>
+			<h1 class="taconame"><?php echo $taco->post_title ?></h1>
 			<div class="picture-container">
 				<?php echo  get_the_post_thumbnail( $taco->ID, ['300','300']); ?>
 			</div>
-			<p>Restaurant: <?php echo $post->post_title ?></p>
-			<span>Meat: <?php echo $taco_meat[$taco->fields['taco-meat']-1]; ?></span>
-			<div>
-				<span>Rating: <div class="star-container"><?php stars($taco->fields['taco-rating']); ?></div></span>	
+			<div class="row">
+			<div class="col-xs-6">
+				<h3 class="restaurant-name"><?php echo $post->post_title ?></h3>
 			</div>
-			
-			<span>Price: $<?php echo $taco->fields['price']; ?></span>
-			<span>Heat: <?php echo $taco->fields['heat']; ?></span>
-			<span>Distance: <?php echo round($post->dist,2); ?></span>
+			<div class="col-xs-6">
+				<span><div class="star-container"><?php stars($taco->fields['taco-rating']); ?></div></span>	
+			</div>
+			</div>
+			<div class="col-xs-12">
+				<span>Meat: <?php echo $taco_meat[$taco->fields['taco-meat']-1]; ?></span>
+				<span>Price: $<?php echo $taco->fields['price']; ?></span>
+				<span>Heat: <?php echo $taco->fields['heat']; ?></span>
+				<span>Distance: <?php echo round($post->dist,2); ?></span>
+				</div>
 		</div>
 	<?php endforeach; ?>
 	
@@ -110,7 +217,8 @@ $location = getLocation($_POST['location']);
 
 <!-- ========================== SIDEBAR ======================================== -->
 
-	
+
+
 </div>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/filters.js"></script>
 <?php 

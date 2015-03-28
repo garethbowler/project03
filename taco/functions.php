@@ -3,10 +3,10 @@
 
 function stars($rating){
 	for($i=0;$i<$rating;$i++){
-		echo '<span class="star glyphicon glyphicon-star" style="width:20px;color:red"></span>';
+		echo '<span class="star glyphicon glyphicon-star" style="width:30px;color:red"></span>';
 	}
 	for(;$i<5;$i++){
-		echo '<span class="star grey glyphicon glyphicon-star" style="width:20px"></span>';	
+		echo '<span class="star grey glyphicon glyphicon-star" style="width:27px"></span>';	
 	}
 }
 

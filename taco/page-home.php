@@ -3,6 +3,8 @@
 Template Name: Results Page
 */
 ?>
+
+
 <div class="container">
 	<div class="login-btn-container">
 		<?php 
@@ -25,10 +27,6 @@ Template Name: Results Page
 			</form>
 		</div>
 	</div>
-
-
-
-
-
 </div>
+
 <?php get_footer(); ?>

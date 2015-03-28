@@ -3,11 +3,221 @@
   Version: 1
   Author: Team Taco
 */
-.container {
+
+
+/*========================================
+			MAIN STYLES
+==========================================*/
+
+body {
 	padding:0px;
-	position:relative;
+	margin-top:-32px;
+}
+
+h1 {}
+
+h2{}
+
+h3{}
+
+h4 {}
+
+h5 {}
+
+p {}
+
+.content {
+	margin-top:40px;
+}
+
+.sidebar {
+	background-color:red;
+	height:400px;
+	width:100%;
+
+}
+
+.sidebar-head {
+	font-family: 'Carnevalee-Freakshow';
+	color:#b38426;
+}
+
+
+
+
+/*==============================================================
+			HEADER STYLES
+================================================================*/
+
+
+
+#header {
+	background-color:black;
+	height:100px;
+}
+
+.navlogin {
+	display:inline-block;
+}
+
+
+.login li{
+	display:inline-block;
+}
+
+.navlogo {
+}
+
+.hlogo {
+/*	width:100px;
+	height:50px;*/
+	display:block;
+	margin-top:12px;
+}
+
+.navlogicon {
+	margin-top: 15px;
+	background-color: black;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.navsearch {
+	margin-top: 25px;
+
+}
+
+
+
+
+/*================================================
+			SEARCH BAR
+=================================================*/
+
+
+.searchinput {
+	width:300px;
+	height: 35px;
+	opacity: 0.8;
+	margin-right:0px;
+	border:0px;
+	padding-left:10px;
+
+}
+
+
+.searchsubmit {
+	width:35px;
+	height:35px;
+	margin-left:-4px;
+	border:0px;
+}
+
+
+.searchform {
+	height:35px;
+	padding:0px;
+}
+
+
+
+
+
+
+/*============================================
+			FILTERS STYLES   
+============================================*/
+
+
+
+.meat{
+text-align:left;
+padding-top:3px;
+}
+
+.meat h4 {
+	margin-left:10px;
+	margin-top:10px;
+}
+
+
+
+.filterbar {
+	height:40px;
+	background-color:#8a000e;
+	border:0px;
+	text-align: left;
+}
+
+
+.filterlabel {
+	height:40px;
+}
+
+.sort-tacos {
+	text-align:left;
+	background-color:#b38426;
+	border:0px;
+	height: 36px;
+
+}
+
+.slider-container {
+/*	background-color:#b38426;*/
+}
+
+/*.filterbtn {
+	border:0px;
+	height:40px;
+	text-align:left;
+}*/
+.buttonface {
+	background-color:none;
+}
+
+.panel-body {
+	padding: 15px;
+	background-color:#b38426;
+}
+
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
+		background-color:#8a000e;
+		border-radius:0px;
+}
+
+.filter-label {
+	display:inline-block;
+	width:60px;
+	text-align:right;
+	margin-right:2px;
+	color:white;
+}
+
+.panel-default, .panel {
+	margin-top:1px;
+}
+
+.filter-title {
+	text-transform:uppercase;
+}
+
+.filter-container .slider-container {
 	
 }
+
+.filter-container .slider-container > div {
+	margin-top:3px;
+	display:inline-block;
+	width:100%;
+}
+
+.taco-range {
+	opacity:0px;
+}
+
+
+
+/*======================== Results Page Styles ===========================*/
 
 
 .buffer {
@@ -15,58 +225,56 @@
 }
 
 .search-container {
- 	width:400px;
+ 	width:100%;
  	margin:auto;
  	text-align:center;
+ 	padding:0px;
 }
 
-
-
-.tacos-container{
-	
-	min-height: 500px;
-	
+.taco-container:last-child {
+	border-bottom:1px solid black;
 }
-
 .taco-container {
 	border:1px solid black;
 	border-bottom:0px;
 }
+
 
 .taco-container span {
 	display:inline-block;
 	width:100px;
 }
 
-.picture-container {
-	height:300px;
-	width: 300px;
+.taconame {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#b38426;
 }
 
-.pic {
+.restaurant-name {
+	text-transform:uppercase;
+	font-family:'Avenir Next';
+	font-weight:normal;
+	font-size:32px;
+}
+
+.star {
+	font-size: 32px;
+	display:inline-block;
+}
+
+.star-container {
 	width:100%;
 }
 
-.filter-container {
-	
-	width:200px;
-	height:400px;
-	left:4px;
-	top:4px;
-	background-color:#666;
-
-
-}
-
-
 .login-btn-container {
-	position:absolute;
-	top:5px;
-	right:5px;
+/*	position:absolute;
+	top:0px;
+	right:0px;
 	height:30px;
 	width:60px;
 	background-color: #666;
-	font-size:20px;
+	font-size:20px;*/
 
 }
 
@@ -81,38 +289,61 @@
 }
 
 
-.filter-container .slider-container{
-	
+
+
+.filter-main {
+	border-radius:0px;
+	border:0px;
 }
 
-.filter-container .slider-container > div{
-	margin-top:3px;
+.filter-container {
+/*	position:absolute;*/
+/*	width:200px;*/
+/*	height:400px;
+	left:4px;*/
+/*	top:4px;*/
+/*	background-color:#666;*/
+/*	margin-top: 60px;*/
+
+
+}
+
+
+
+
+
+/*==========================================================
+						SEARCH RESULTS PAGE
+============================================================*/
+
+
+.searchresults {
+	height:400px;
+	width:100%;
+	overflow:hidden;
+	background-color:red;
+}
+
+.loginlist {
 	display:inline-block;
-	width:80px;
 }
 
-.filter-label {
-	display:inline-block;
-	width:60px;
-	text-align:right;
-	margin-right:2px;
-	color:white;
+
+.picture-container img{
+	width:100%;
 }
 
-.star {
-	font-size:20px;
-	cursor:default;
+
+
+/*=================== HELPERS =======================*/
+
+
+
+.h300 {
+	height:300;
+	background-color: red;
 }
 
-.star-container {
-	width:120px;
-}
-
-.grey {
-	color:#666;
-}
-
-.footer-bar {
-	height:100px;
-	background-color: #666;
+.red {
+	background-color:;
 }
