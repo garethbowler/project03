@@ -3,31 +3,168 @@
   Version: 1
   Author: Team Taco
 */
-.container {
-	padding:0px;
-	position:relative;
-	
+
+body{
+
+}
+@font-face{
+    font-family: Carnevalee;
+    src: url(images/Carnevalee.ttf);
 }
 
 
+.head{
+	max-height: 700px;
+	min-height: 600px;
+	margin-top: -20px;
+	background-image:url('images/navbanner.jpg');
+	background-size: cover;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+}
+
+
+.head img{
+	margin-top: 50px;
+	opacity: 0.9;
+}
+
+header{
+/*	margin-top: -20px;
+	width: 100%;
+	background:url('navbanner.jpg')no-repeat;
+	background-size:100%;
+	background-attachment: fixed;
+	height: 140px;
+	display:block;
+	padding:0 !important;
+	margin:0;
+	height: 700px;
+*/
+}
+
+.top{
+	background-color: rgba(50, 30, 3, 0.8);
+	text-align: center;
+
+
+}
+.top li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 15pt;
+	margin: 0px 20px 0px 20px;		
+	
+	
+}
+.top a{
+	color: #eee;
+
+	
+}
+.top li:hover{
+	background-color: #6B4C03;
+
+
+}
+.top a:hover{
+	text-decoration: none;		
+	color: white;
+}
+
+.search-conatiner{
+
+	padding-top: 120px;
+	text-align: center;
+}
+.search-container .btn-loud{
+	padding: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #B91D33;
+	border: none;
+	color: white;
+}
+
+.form-group{
+	/*background-color: #aaa;
+	border-radius: 5px;
+	padding: 10px;*/
+	opacity: 0.8;
+	
+	display: inline-block;
+}
+.form-group input{
+
+	padding-right: 150px;
+	border: none;
+}
+.container h3{
+	padding-top: 20px;
+	text-align: center;
+}
+.body{
+	padding-top: 100px;
+	background-color: #24120F;
+	color: #C19442;
+	text-align: center;	
+	font-size: 12pt;
+	font-
+	line-height: 30px;
+	height: 700px;
+	border-image: url(images/border.png) 100 0 0 repeat;
+	border-style: solid;
+	border-width: 50px 0px 0px;
+
+}
+.body h3{
+	font-family: Carnevalee;
+	font-size: 60px;
+}
+.container-fluid{
+
+}
+
+
+footer{
+	min-height: 260px;
+	background-color: #020202;
+	color: #C19442;
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-family: avenir;
+	padding-bottom: 25px;
+}
+
+footer p{
+	font-size: 15px;
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 10px;
+}
+
+/* end homepage styles */
 .buffer {
 	height:300px;
 }
 
-.search-container {
+/*.search-container {
  	width:400px;
  	margin:auto;
  	text-align:center;
+}*/
+
+.taco-container:last-child {
+	border-bottom:1px solid black;
 }
-
-
-
-.tacos-container{
-	
-	min-height: 500px;
-	
-}
-
 .taco-container {
 	border:1px solid black;
 	border-bottom:0px;
@@ -38,17 +175,8 @@
 	width:100px;
 }
 
-.picture-container {
-	height:300px;
-	width: 300px;
-}
-
-.pic {
-	width:100%;
-}
-
 .filter-container {
-	
+	position:absolute;
 	width:200px;
 	height:400px;
 	left:4px;
@@ -57,12 +185,10 @@
 
 
 }
-
-
 .login-btn-container {
 	position:absolute;
-	top:5px;
-	right:5px;
+	top:0px;
+	right:0px;
 	height:30px;
 	width:60px;
 	background-color: #666;
@@ -99,20 +225,3 @@
 	color:white;
 }
 
-.star {
-	font-size:20px;
-	cursor:default;
-}
-
-.star-container {
-	width:120px;
-}
-
-.grey {
-	color:#666;
-}
-
-.footer-bar {
-	height:100px;
-	background-color: #666;
-}

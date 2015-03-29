@@ -83,12 +83,4 @@ jQuery(function($){
         $tacos.each(function(){$(this).show("slow");});
     });
 
-    $('.star-container').click(function(event){
-        var loggedIn=$('.login-btn-container').attr('loggedIn');
-        if(loggedIn=='true'){
-            
-        }
-        //alert($(event.target).index()+1);
-    });
-
 });
