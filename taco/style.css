@@ -12,6 +12,7 @@
 body {
 	padding:0px;
 	margin-top:-32px;
+	color:#b38426;
 }
 
 h1 {}
@@ -27,7 +28,8 @@ h5 {}
 p {}
 
 .content {
-	margin-top:40px;
+	margin-top:0px;
+	padding: 60px;
 }
 
 .sidebar {
@@ -171,6 +173,7 @@ padding-top:3px;
 	height:40px;
 	text-align:left;
 }*/
+
 .buttonface {
 	background-color:none;
 }
@@ -197,8 +200,12 @@ padding-top:3px;
 	margin-top:1px;
 }
 
+.panel-title h4 {
+	color:#b38426;
+}
 .filter-title {
 	text-transform:uppercase;
+	color:#b38426;
 }
 
 .filter-container .slider-container {
@@ -215,11 +222,18 @@ padding-top:3px;
 	opacity:0px;
 }
 
-
-
 /*======================== Results Page Styles ===========================*/
 
 
+
+#content-background {
+	background-image: url('images/background-test.gif');
+	background-position: left;
+	background-attachment:fixed;
+	width:100%;
+	padding:0px;
+	margin-top: 0px;
+}
 .buffer {
 	height:300px;
 }
@@ -255,7 +269,7 @@ padding-top:3px;
 	text-transform:uppercase;
 	font-family:'Avenir Next';
 	font-weight:normal;
-	font-size:32px;
+	font-size:28px;
 }
 
 .star {
@@ -307,9 +321,6 @@ padding-top:3px;
 
 
 }
-
-
-
 
 
 /*==========================================================
