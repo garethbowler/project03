@@ -4,6 +4,13 @@ FONT STYLE SHEET
  */
 
  @font-face {
+  font-family: 'Carnevalee-Freakshow';
+  src: url('../fonts/Carnevalee-Freakshow.ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
    font-family: 'Avenir Next';
    src: url('../fonts/AvenirNext-Medium.ttf');
    font-weight: normal;
@@ -25,17 +32,11 @@ FONT STYLE SHEET
    font-style: normal;
  }
 
-@font-face {
-	font-family: 'Carnevalee-Freakshow';
-	src: url('../fonts/Carnevalee-Freakshow.ttf');
-	font-weight:normal;
-	font-style:normal;
-}
 
 h1{
  font-size: 36px;
  font-family: 'Avenir Next';
- font-weight:lighter;
+ font-weight:normal;
 }
 h2{
  font-size: 36px;

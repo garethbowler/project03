@@ -1,8 +1,4 @@
-<?php get_header();
-/*
-Template Name: Results Page
-*/
-?>
+
 
 <!-- 
 <div class="container">
@@ -29,15 +25,40 @@ Template Name: Results Page
 	</div>
 </div> -->
 
-<?php get_header();
+<?php
 /*
 Template Name: Home Page
 */
 ?>
+<head>
+	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/fonts.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+	<?php wp_head();?>
+</head>
 <header>
 	<div class="head">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-8">
+					<div class="login-btn-container">
+						<?php 
+						if(is_user_logged_in()){
+							echo '<a href="'.get_permalink(71).'&logout=true">Logout</a>';
+						}else {
+							echo '<a href="'.get_permalink(68).'">Login</a>';
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="row text-center">
-			<img src="images/taco_snob.png" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/images/taco_snob.png" alt="">
 		</div>
 		<div class="row">	
 			<div class="search-container">
@@ -48,7 +69,6 @@ Template Name: Home Page
 							<button type="submit" class="btn btn-loud" value=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 							</button>
 						</div>
-
 					</form>
 		      	</div>
 			</div>
@@ -57,40 +77,12 @@ Template Name: Home Page
 </header>
 <div class="body">
 	<div class="container">
-		<div class="col-xs-8 col-xs-offset-2">
-			<img src="aztec.png" alt="">
+		<div class="col-xs-8 col-xs-offset-2 about">
+			<img src="<?php bloginfo('template_directory'); ?>/images/aztec.png" alt="">
 			<h3>About</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia id est debitis repellat omnis possimus expedita eligendi, voluptatum nobis, doloribus quasi consectetur itaque nihil illum quos a necessitatibus cumque cum.</p>
 		</div>
 	</div>
 </div>
-	<footer class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				CONTACT
-				<br>
-				<br>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				FOLLOW US
-				<br>
-				<br>
-				<img src="instagram.png">
-				<img src="Facebook-icon.png">
-				<img src="instagram.png">
-				<img src="Facebook-icon.png">
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				COPYRIGHT 2015
-				<br>
-				<br>
-				<img src="icon.png">
-			</div>
-		</div>
-	</footer>
-<?php get_footer(); ?>
+
 <?php get_footer(); ?>
