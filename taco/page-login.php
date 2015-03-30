@@ -3,6 +3,7 @@
 Template Name: Login Page
 */
 ?>
+
 <div class="container">
 	<div class="col-xs-6 col-xs-offset-3 login-container">
 		<form action="<?php echo get_permalink(71); ?>" method="post">

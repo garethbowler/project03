@@ -6,10 +6,11 @@ Template Name: Splash Page
 
 
 
+if(array_key_exists("logout",$_GET)){
+	wp_logout();
+	header( "Location:/");
 
-
-
-if(array_key_exists("email",$_POST)){
+}else if(array_key_exists("email",$_POST)){
 	// USER REGISTERING
 
 	// Validate user info
