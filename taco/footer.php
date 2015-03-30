@@ -31,7 +31,11 @@
 			</div>
 		</div>
 		<div class="footer-border">
+<<<<<<< HEAD
+			<!-- <img class="border-top" src="<?php bloginfo('template_directory'); ?>/images/searchborder.png" alt=""> -->
+=======
 			<img class="border-top" src="<?php bloginfo('template_directory'); ?>/images/searchborder.png" alt="">
+>>>>>>> origin/Paul-Search-Styling-1
 		</div>
 	</footer>
 
