@@ -22,7 +22,11 @@ if(array_key_exists("logout",$_GET)){
 			echo 'failed2';
 		}
 	}
-}else {
+}else if(array_key_exists("cmnt",$_GET)){
+	echo $_GET['taco'];
+	return;
+
+}else if(array_key_exists("username",$_POST)){
 	// USER LOGGING IN
 	if(($_POST['username']!=null)&&($_POST['password']!=null)){
 		$cred=[];

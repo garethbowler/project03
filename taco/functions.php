@@ -1,5 +1,6 @@
 <?php
 
+$taco_meat =['Beef','Chicken','Pork','Fish','Vegan','Other'];
 
 function stars($rating){
 	for($i=0;$i<$rating;$i++){
@@ -40,4 +41,11 @@ function search_where( $where ){
 function search_fields($fields){
 	global $location;
 	return $fields.',(@aa:=distance('.$location['lat'].','.$location['lng'].',ID)) AS dist';
+}
+
+ function rating_order( $wp_query ) {
+        $wp_query->set('meta_key', 'wpcf-taco-rating');
+        $wp_query->set('orderby', 'meta_value');
+        $wp_query->set('order', 'ASC');
+
 }

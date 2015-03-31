@@ -230,7 +230,7 @@ header{
 ================================================================*/
 
 #wrapper{
-	border:1px dotted red;
+	
 	
 }
 
@@ -873,4 +873,19 @@ input[type="button"]:active {
 .no-pad-marg {
 	margin:0px;
 	padding:0px;
+}
+
+
+
+
+/*---------------- Temp Taco Styling ----------------------*/
+.top-rated-container {
+	height:300px;
+	background-color:#666;
+
+}
+
+.featured-container {
+	margin-top:4px;
+	background-color: #666;
 }

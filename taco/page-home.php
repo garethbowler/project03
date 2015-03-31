@@ -43,26 +43,6 @@ Template Name: Home Page
 </head>
 <header>
 	<div class="head">
-
-		<!-- <div class="container">
-
-		<div class="container">
->>>>>>> origin/Paul-Search-Styling-1
-			<div class="row">
-				<div class="col-xs-4 col-xs-offset-8">
-					<div class="login-btn-container">
-						<?php 
-						if(is_user_logged_in()){
-							echo '<a href="'.get_permalink(71).'&logout=true">Logout</a>';
-						}else {
-							echo '<a href="'.get_permalink(68).'">Login</a>';
-						}
-						?>
-					</div>
-				</div>
-			</div>
-
-		</div> -->
 		<div class="row">
 			
 				<i class="fa fa-user fa-3x pull-right">
@@ -83,7 +63,7 @@ Template Name: Home Page
 		<div class="row">	
 			<div class="search-container">
 				<div class="col-xs-8 col-xs-offset-2">
-					<form action="<?php echo get_permalink(66); ?>" method="post" class="navbar-form">
+					<form action="<?php echo get_permalink(66); ?>&pg=1" method="post" class="navbar-form">
 						<div class="form-group">						
 							<input name="location" class="form-control" type="text" placeholder="search">
 							<button type="submit" class="btn btn-loud" value="" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
