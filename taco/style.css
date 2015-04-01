@@ -1,0 +1,876 @@
+/**
+  Theme Name: Taco Theme
+  Version: 1
+  Author: Team Taco
+*/
+
+
+/*========================================
+			MAIN STYLES
+==========================================*/
+
+body {
+	padding:0px;
+	
+}
+
+h1 {}
+
+h2{}
+
+h3{}
+
+h4 {}
+
+h5 {}
+
+p {}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	opacity:.8;
+	text-decoration:none;
+}
+
+.content {
+	margin-top:40px;
+}
+
+.sidebar {
+	background-color:red;
+	height:400px;
+	width:100%;
+
+}
+
+.sidebar-head {
+	font-family: 'Carnevalee-Freakshow';
+	color:#b38426;
+}
+
+
+body{
+
+}
+/*=====================================================
+					HOME PAGE
+======================================================*/
+
+.head{
+	max-height: 700px;
+	min-height: 600px;
+	margin-top: -20px;
+	background-image:url('images/navbanner.jpg');
+	background-size: cover;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+}
+
+i.fa-user{
+	padding-top: 30px;
+	padding-right: 30px;
+	color: #fff;
+}
+span#login{
+	font-size: 18pt;
+	color: white;
+	text-decoration: none;
+
+}
+span#login:hover{
+	/*text-decoration: underline;*/
+	color: white;
+}
+span.glyphicon{
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+
+.head img{
+	margin-top: 50px;
+	opacity: 0.9;
+}
+
+header{
+/*	margin-top: -20px;
+	width: 100%;
+	background:url('navbanner.jpg')no-repeat;
+	background-size:100%;
+	background-attachment: fixed;
+	height: 140px;
+	display:block;
+	padding:0 !important;
+	margin:0;
+	height: 700px;
+*/
+}
+
+.top{
+	background-color: rgba(50, 30, 3, 0.8);
+	text-align: center;
+
+
+}
+.top li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 30px;
+	font-size: 15pt;
+	margin: 0px 20px 0px 20px;		
+	
+	
+}
+.top a{
+	color: #eee;
+
+	
+}
+.top li:hover{
+	background-color: #6B4C03;
+
+
+}
+.top a:hover{
+	text-decoration: none;		
+	color: white;
+}
+
+.search-container{
+	padding-top: 120px;
+	text-align: center;
+}
+
+.glyphicon {
+	font-size:24px;
+}
+.search-container .btn-loud{
+    padding:6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #B91D33;
+	border: none;
+	color: white;
+	border-radius:0px;
+}
+
+.form-group{
+	/*background-color: #aaa;
+	border-radius: 5px;
+	padding: 10px;*/
+	opacity: 0.8;
+	display: inline-block;
+}
+.form-group input{
+
+	padding-right: 150px;
+	border: none;
+	border-radius:0px;
+
+}
+.container h3{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.mainlogo{
+	vertical-align:middle;
+}
+
+
+.about{
+}
+.body{
+
+	padding-top: 70px;
+	background-color: #24120F;
+	color: #C19442;
+	font-size: 20px;
+	font-weight:;
+	text-align: center;
+	line-height: 30px;
+	height: 700px;
+	border-image: url(images/border.png) 100 0 0 repeat;
+	border-style: solid;
+	border-width: 50px 0px 0px;
+
+}
+.about h3{
+}
+.body h3{
+
+	font-family: 'Carnevalee-Freakshow';
+	font-size: 80px;
+}
+
+.about p {
+	margin-top:40px;
+	font-size:20px;
+	letter-spacing: .1em;
+	font-weight:normal;
+}
+.container-fluid{
+
+}
+/* end homepage styles */
+
+
+
+/*==============================================================
+			HEADER STYLES
+================================================================*/
+
+#wrapper{
+	border:1px dotted red;
+	
+}
+
+#header {
+	background-color:black;
+	height:100px;
+}
+
+.navlogin {
+	display:inline-block;
+}
+
+
+.login li{
+	display:inline-block;
+}
+
+.navlogo {
+}
+
+.hlogo {
+/*	width:100px;
+	height:50px;*/
+	display:block;
+	margin-top:12px;
+}
+
+.navlogicon {
+	margin-top: 15px;
+	background-color: black;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.navsearch {
+	margin-top: 25px;
+
+}
+
+#main-pic {
+	width:100%;
+}
+
+#main-pic img{
+	display:block;
+	margin:auto;
+}
+
+
+
+/*================================================
+			SEARCH BAR
+=================================================*/
+
+
+.searchinput {
+	width:80%;
+	height: 35px;
+	opacity: 0.8;
+	margin-right:0px;
+	border:0px;
+	padding-left:10px;
+
+}
+
+.searchsubmit {
+	width:35px;
+	height:35px;
+	margin-left:-4px;
+	border:0px;
+}
+
+
+.searchform {
+	height:35px;
+	padding:0px;
+}
+
+#searchbar {
+	height:100%;
+	background-color:#8a000e;
+	width:100%;
+}
+
+
+/*============================================
+			FILTERS STYLES   
+============================================*/
+
+.sidebar-head {
+	font-family: 'Carnevalee-Freakshow';
+	color:#b38426;
+	font-size:40px;
+	margin-top:60px;
+}
+
+
+.filter-main {
+	border-radius:0px;
+	border:0px;
+}
+
+.filter-container {
+/*	position:absolute;*/
+/*	width:200px;*/
+/*	height:400px;
+	left:4px;*/
+/*	top:4px;*/
+/*	background-color:#666;*/
+/*	margin-top: 60px;*/
+}
+.filter-main {
+	border-radius:0px;
+	border:0px;
+}
+
+.filter-container {
+/*	position:absolute;*/
+/*	width:200px;*/
+/*	height:400px;
+	left:4px;*/
+/*	top:4px;*/
+/*	background-color:#666;*/
+/*	margin-top: 60px;*/
+
+
+
+}
+
+.meat{
+	text-align:left;
+	padding-top:3px;
+}
+
+.meat h4 {
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.meat-type {
+	border-bottom: 1px solid black;
+	padding-left: 20px;
+}
+
+
+/**For Custom Check boxes**/
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+	background-color:#8a000e;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background-color: gray;
+}
+
+/****************************/
+
+/**For Custom Check boxes**/
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+	background-color:#8a000e;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background-color: gray;
+}
+
+/****************************/
+
+.filterbar {
+	height:40px;
+	background-color:#8a000e;
+	border:0px;
+	text-align: left;
+}
+
+
+.filterlabel {
+	height:40px;
+}
+
+.filter-label h6 {
+	font-family: 'Avenir Next';
+	font-size: 14px;
+	font-weight:normal;
+	color:#8a000e;
+
+}
+
+.sort-tacos {
+	text-align:left;
+	background-color:#b38426;
+	border:0px;
+	height: 36px;
+	border-bottom:1px black solid;
+
+}
+
+.sort-tacos[value]{
+	font-family:'Avenir Next';
+	color:#8a000e;
+	font-size:16px;
+	text-transform:uppercase;
+}
+
+
+.sort-tacos[value]{
+	font-family:'Avenir Next';
+	color:#8a000e;
+	font-size:16px;
+	text-transform:uppercase;
+}
+
+.panel-heading {
+	border:none;
+}
+.panel-title {
+	text-align: left;
+	color:#b38426;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border-top:1px thin black;
+  border-color:black;
+  border:thin;
+}
+
+.panel-group .panel+.panel {
+  margin-top: 1px;
+}
+
+.slider-container {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/*.filterbtn {
+	border:0px;
+	height:40px;
+	text-align:left;
+}*/
+
+.buttonface {
+	background-color:none;
+}
+
+.panel-body {
+	padding: 0px;
+	background-color:#b38426;
+}
+
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
+		background-color:#8a000e;
+		border-radius:0px;
+		font-family: 'Avenir Next';
+		font-weight: normal;
+}
+
+#headingOne+#headingTwo+#headingThree+#headingFour  h4:hover {
+	opacity:0.8;
+}
+
+#headingOne+#headingTwo+#headingThree+#headingFour  h4:active {
+	text-decoration:none;
+}
+
+.filter-label {
+	display:inline-block;
+	text-align:right;
+	margin-right:2px;
+	color:white;
+	text-transform:uppercase;
+	font-family: 'Avenir Next';
+	height:36px;
+}
+
+.panel-default, .panel {
+	border:0px;
+}
+
+.filter-container .slider-container {
+	
+}
+
+.filter-container .slider-container > div {
+	margin-top:3px;
+	display:inline-block;
+	width:100%;
+}
+
+.taco-range {
+	opacity:0px;
+}
+
+
+.heat {
+	background-color:#8a000e;
+	margin-top:-19px;
+	border: 0px;
+}
+
+
+.heat[value] {
+	font-family:'Avenir Next';
+	font-size:16px;
+	color:#b38426;
+	text-align:left;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+#collapseOne#collapseTwo#collapseThree#collapseFour{
+	border-top: 1px black solid;
+}
+
+input[type="button"]:active {
+	border:0px;
+}
+/*==========================================================
+						SEARCH RESULTS PAGE
+============================================================*/
+
+
+.searchresults {
+	height:400px;
+	width:100%;
+	overflow:hidden;
+	background-color:red;
+}
+
+.content {
+	position:relative;
+}
+
+.loginlist {
+	display:inline-block;
+}
+
+.picture-container {
+/*	position:relative;*/
+	width:100%;
+/*	height:100%;*/
+/*	border:1px dotted red;*/
+	overflow: hidden;
+    margin:0px;
+    padding:0px;
+/*    background-color: #666;*/
+    float:left;
+}
+
+.1pxborder{
+	background-color:#b38426;
+	width:100%;
+	border-bottom:solid;
+	border-color: #b38426;
+	border-width:1px;
+}
+
+.picture-container img{
+	display:block;
+	margin:auto;
+	width:100%;
+	min-height:300px;
+}
+    
+}
+
+.picture-container span {
+	position:absolute;
+	font-size:22px;
+	left:3px;
+	top:3px;
+	color:white;
+	text-shadow:2px 2px black;
+}
+
+
+.heat[value] {
+	font-family:'Avenir Next';
+	font-size:16px;
+	color:#b38426;
+	text-align:left;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+#collapseOne#collapseTwo#collapseThree#collapseFour{
+	border-top: 1px black solid;
+}
+
+input[type="button"]:active {
+	border:0px;
+}
+/*==========================================================
+						SEARCH RESULTS PAGE
+============================================================*/
+
+
+.searchresults {
+	height:400px;
+	width:100%;
+	overflow:hidden;
+	background-color:red;
+}
+
+.content {
+	position:relative;
+}
+
+.loginlist {
+	display:inline-block;
+}
+
+.picture-container {
+/*	position:relative;*/
+	width:100%;
+/*	height:100%;*/
+/*	border:1px dotted red;*/
+	overflow: hidden;
+    margin:0px;
+    padding:0px;
+/*    background-color: #666;*/
+    float:left;
+}
+
+.1pxborder{
+	background-color:#b38426;
+	width:100%;
+	border-bottom:solid;
+	border-color: #b38426;
+	border-width:1px;
+}
+
+.picture-container img{
+	display:block;
+	margin:auto;
+	width:100%;
+	min-height:300px;
+}
+    
+}
+
+.picture-container span {
+	position:absolute;
+	font-size:22px;
+	left:3px;
+	top:3px;
+	color:white;
+	text-shadow:2px 2px black;
+}
+
+.info-container {
+	width:300px;
+	position:relative;
+}
+
+#content-background {
+	background-image: url('images/background-test.gif');
+	background-position: left;
+	background-attachment:fixed;
+	width:100%;
+	padding:0px;
+	/*margin-top: 80px;*/
+	/* Why do I have to put a margin on this???????*/
+}
+
+
+.buffer {
+	height:300px;
+}
+/*======================== Results Page Styles ===========================*/
+
+
+
+.search-container {
+ 	width:100%;
+ 	margin:auto;
+ 	text-align:center;
+ 	padding:0px;
+}
+
+.taco-container:last-child {
+	border-bottom:1px solid black;
+}
+.taco-container {
+	border:1px solid black;
+	border-bottom:0px;
+	margin-bottom:30px;
+}
+
+
+.taco-container span {
+	display:inline-block;
+	width:100px;
+}
+
+.taconame {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#b38426;
+	font-size:36px;
+	text-align:left;
+}
+
+.restaurant-name {
+	text-transform:uppercase;
+	font-family:'Avenir Next';
+	font-weight:normal;
+	font-size:28px;
+	color:#b38426;
+	margin-top:-10px;
+	text-align:left;
+	margin-left: 0px;
+	width:100%;
+}
+
+.star {
+	font-size: 32px;
+	display:inline-block;
+}
+
+.star-container {
+}
+
+.star-container {
+/*	position:absolute;
+	left:0px;
+	bottom:0px;*/
+	width:250px;
+}
+
+.login-btn-container {
+/*	position:absolute;
+	top:0px;
+	right:0px;
+	height:30px;
+	width:60px;
+	background-color: #666;
+	font-size:20px;*/
+
+}
+
+.login-btn-container a {
+	color:white;
+	text-decoration: none;
+}
+
+.login-container {
+	height:300px;
+/*	background-color: #666;*/
+}
+
+
+/*====================================================
+				SIDEBAR RIGHT
+======================================================*/
+
+.sidebar-right {
+	height:133px;
+	width:100%;
+	background-color:red;
+	margin-bottom:15px;
+}
+
+/*====================================================
+					FOOTER:  
+=====================================================*/
+
+.footer{
+	background-color: #020202;
+	color: #C19442;
+	font-size: 15px;
+	padding-top: 50px;
+	text-align: left;
+	font-family: 'Avenir Next';
+	padding-bottom: 25px;
+}
+
+.footer p{
+	font-size: 16px;
+	text-align: left;
+	line-height:2em;
+	margin-top:20px;
+	font-weight:lighter;
+
+}
+
+.footer h5 {
+	font-size: 30px;
+	font-weight:100;
+	text-align:left;
+
+}
+
+.socialmedia-icons {
+	margin-right: 15px;
+	margin-top:20px;
+}
+
+.footer-border { 
+	margin-top: 50px;
+	margin-bottom: -23px;	
+	border-image: url(images/border.png) 100 0 0 repeat;
+	border-style: solid;
+	border-width: 50px 0px 0px;
+	margin-top:30px;
+
+}
+
+/*=================== HELPERS =======================*/
+
+
+
+.h300 {
+	height:300;
+	background-color: red;
+}
+
+.red {
+	background-color:;
+}
+
+.no-pad-marg {
+	margin:0px;
+	padding:0px;
+}
