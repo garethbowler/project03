@@ -44,25 +44,9 @@ Template Name: Home Page
 <header>
 	<div class="head">
 
-		<!-- <div class="container">
-
 		<div class="container">
->>>>>>> origin/Paul-Search-Styling-1
-			<div class="row">
-				<div class="col-xs-4 col-xs-offset-8">
-					<div class="login-btn-container">
-						<?php 
-						if(is_user_logged_in()){
-							echo '<a href="'.get_permalink(71).'&logout=true">Logout</a>';
-						}else {
-							echo '<a href="'.get_permalink(68).'">Login</a>';
-						}
-						?>
-					</div>
-				</div>
-			</div>
 
-		</div> -->
+
 		<div class="row">
 			
 				<i class="fa fa-user fa-3x pull-right">

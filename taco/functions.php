@@ -1,5 +1,6 @@
 <?php
 
+$taco_meat =['Beef','Chicken','Pork','Fish','Vegan','Other'];
 
 function stars($rating){
 	for($i=0;$i<$rating;$i++){
@@ -9,6 +10,16 @@ function stars($rating){
 		echo '<span class="star grey glyphicon glyphicon-star" style="width:27px;color:#b38426;margin-right:10px"></span>';	
 	}
 }
+
+function starsSize($rating,$x,$y){
+	for($i=0;$i<$rating;$i++){
+		echo '<span class="star glyphicon glyphicon-star" style="width:'.$x.'px;color:#8a000e;;margin-top:10px;margin-right:10px;font-size: 40px;text-shadow:1px 1px white"></span>';
+	}
+	for(;$i<5;$i++){
+		echo '<span class="star grey glyphicon glyphicon-star" style="width:'.$y.'px;color:#b38426;margin-right:10px;font-size: 40px;text-shadow:1px 1px white"></span>';	
+	}
+}
+
 
 function getLocation($location){
 	$location = str_replace(' ','%20',$location);
@@ -40,4 +51,11 @@ function search_where( $where ){
 function search_fields($fields){
 	global $location;
 	return $fields.',(@aa:=distance('.$location['lat'].','.$location['lng'].',ID)) AS dist';
+}
+
+ function rating_order( $wp_query ) {
+        $wp_query->set('meta_key', 'wpcf-taco-rating');
+        $wp_query->set('orderby', 'meta_value');
+        $wp_query->set('order', 'ASC');
+
 }

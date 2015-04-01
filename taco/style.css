@@ -11,6 +11,7 @@
 
 body {
 	padding:0px;
+
 	
 }
 
@@ -230,7 +231,7 @@ header{
 ================================================================*/
 
 #wrapper{
-	border:1px dotted red;
+	
 	
 }
 
@@ -729,13 +730,18 @@ input[type="button"]:active {
  	padding:0px;
 }
 
-.taco-container:last-child {
-	border-bottom:1px solid black;
-}
+
 .taco-container {
+	height:300px;
 	border:1px solid black;
-	border-bottom:0px;
 	margin-bottom:30px;
+	background-size:100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-align:center;
+  	color:#fff;
 }
 
 
@@ -749,7 +755,9 @@ input[type="button"]:active {
 	font-weight:bold;
 	color:#b38426;
 	font-size:36px;
-	text-align:left;
+	color:white;
+	text-shadow:2px 2px black;
+	text-align:center;
 }
 
 .restaurant-name {
@@ -757,7 +765,8 @@ input[type="button"]:active {
 	font-family:'Avenir Next';
 	font-weight:normal;
 	font-size:28px;
-	color:#b38426;
+	color:black;
+	text-shadow:1px 1px white;
 	margin-top:-10px;
 	text-align:left;
 	margin-left: 0px;
@@ -765,8 +774,8 @@ input[type="button"]:active {
 }
 
 .star {
-	font-size: 32px;
-	display:inline-block;
+	height:60px;
+	
 }
 
 .star-container {
@@ -778,6 +787,13 @@ input[type="button"]:active {
 	bottom:0px;*/
 	width:250px;
 }
+
+.star-container-results {
+	width:250px;
+	margin:auto;
+	font-size:30px;
+}
+
 
 .login-btn-container {
 /*	position:absolute;

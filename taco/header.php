@@ -12,44 +12,29 @@
 </head>
 <body>
 
-<div id="wrapper">
-	<div id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-3 navlogo">
-					<a href="#"><img class="hlogo" src="<?php bloginfo('template_directory'); ?>/images/headerlogo.png" alt=""></a>
+
+<div id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-3 navlogo">
+				<a href="#"><img class="hlogo" src="<?php bloginfo('template_directory'); ?>/images/headerlogo.png" alt=""></a>
+			</div>
+			<div class="col-xs-12 col-md-6 navsearch">
+				<div class="search-container">
+					<form action="<?php echo get_permalink(66); ?>" method="post" class="navbar-form">
+						<div class="form-group">						
+							<input name="location" class="form-control" type="text">
+							<button type="submit" class="btn btn-loud" value=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							</button>
+						</div>
+					</form>
 				</div>
-				<div class="col-xs-12 col-md-6 navsearch">
-					<div class="search-container">
-<!-- 						<form action="<?php echo get_permalink(66); ?>" method="post">
-								<input name="location" type="text" class="searchinput" value>
-								<input type="submit" class="btn-primary searchsubmit" value="">
-							</form> -->
-						<form action="<?php echo get_permalink(66); ?>" method="post" class="navbar-form">
-							<div class="form-group">						
-								<input name="location" class="form-control" type="text">
-								<button type="submit" class="btn btn-loud" value=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="col-xs-3 login">
-					<ul class="loginlist">
-						<li><a class="btn btn-primary navlogicon" href="#"><h4>Log In</h4></a></li>
-						<li><a class="btn btn-primary navlogicon" href="#"><h4>Register</h4></a></li>
-					</ul>
-<!-- 
-					<div class="login-btn-container" loggedIn="<?php echo (is_user_logged_in()?'true':'false') ?>">
-						<?php 
-							if(is_user_logged_in()){
-								echo '<a href="'.get_permalink(71).'&logout=true">Logout</a>';
-							}else {
-								echo '<a href="'.get_permalink(68).'">Login</a>';
-							}
-						?>
-					</div> -->
-				</div>
+			</div>
+			<div class="col-xs-3 login">
+				<ul class="loginlist">
+					<li><a class="btn btn-primary navlogicon" href="#"><h4>Log In</h4></a></li>
+					<li><a class="btn btn-primary navlogicon" href="#"><h4>Register</h4></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
