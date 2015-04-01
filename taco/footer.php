@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="footer-border">
-			<img class="border-top" src="<?php bloginfo('template_directory'); ?>/images/searchborder.png" alt="">
+			
 		</div>
 	</footer>
 
