@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-md-4">
 					<div class="col-xs-12">
-					<h5>CONTACT<h5>
+						<h5>CONTACT<h5>
 					</div>
 					<div class="col-xs-12">
 					<p class="">

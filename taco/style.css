@@ -240,7 +240,7 @@ header{
 }
 
 .navlogin {
-	display:inline-block;
+	/*display:inline-block;*/
 }
 
 
@@ -254,7 +254,7 @@ header{
 .hlogo {
 /*	width:100px;
 	height:50px;*/
-	display:block;
+	/*display:block;*/
 	margin-top:12px;
 }
 
@@ -271,12 +271,12 @@ header{
 }
 
 #main-pic {
-	width:100%;
+	/*width:100%;*/
 }
 
 #main-pic img{
 	display:block;
-	margin:auto;
+	/*margin:auto;*/
 }
 
 
@@ -856,7 +856,36 @@ input[type="button"]:active {
 	margin-top:30px;
 
 }
+/*====================================================
+					TACO-SINGLES:  
+=====================================================*/
 
+.singles-container{
+	border-top: 7px solid #941728;
+}
+h1.singles-title{
+	font-weight: bold;
+}
+.like-percent{
+	font-size: 40px;
+	color: orange;
+	margin-bottom: 10px;
+}
+.reviews img{
+	min-height: 50px;
+	min-width: 50px;
+}
+.singles-container .btn-primary{
+	background-color: #941728;
+	border: #941728
+}
+#like .btn-primary{
+	margin-bottom: 5px;
+}
+.singles-thmb{
+	margin-bottom: 10px;
+	margin-right: 10px;
+} 
 /*=================== HELPERS =======================*/
 
 
