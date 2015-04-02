@@ -83,12 +83,33 @@ jQuery(function($){
         $tacos.each(function(){$(this).show("slow");});
     });
 
+    function updateRating(cntr,rating){var i
+        
+        
+        //css(['color','color:#000000'])
+        for(i=0;i<rating;i++){
+            $($(cntr).children()[i]).css('color','#8a000e');
+        }
+        for(i=i;i<5-rating;i++){
+            $($(cntr).children()[i]).css('color','#b38426');
+
+        }
+
+    }
+
     $('.star-container').click(function(event){
         var loggedIn=$('.login-btn-container').attr('loggedIn');
         if(loggedIn=='true'){
             
         }
-        //alert($(event.target).index()+1);
+
+        url = $('#content-background').attr('splash');
+        tacoId = $(this).closest('.taco-container').attr('taco-id');
+        rating = $(event.target).index()+1; 
+        var xmlhttp = new XMLHttpRequest;
+        xmlhttp.open("GET",url+'&rate='+rating+'&tacoId='+tacoId,false);
+        xmlhttp.send();
+        updateRating($(this),rating);
     });
 
 });
